@@ -86,7 +86,13 @@ body{
 	box-flex:1;
 }
 .myfooter .menu li a{
+	display: block;
 	color: #8c8c8c;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	
+
 }
 
 /*箭头指示引导*/
