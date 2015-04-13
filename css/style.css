@@ -68,6 +68,27 @@ body{
 	animation: start 1.5s infinite ease-in-out;
 }
 
+.myfooter .menu{
+	display: -webkit-box;
+	display: -ms-box;
+	display: -moz-box;
+	display: box;
+	line-height: 45px;
+	font-size: 2rem;
+	color: #ffffff;
+	text-align: center;
+}
+.myfooter .menu li{
+	position: relative;
+	-webkit-box-flex:1;
+	-moz-box-flex:1;
+	-ms-box-flex:1;
+	box-flex:1;
+}
+.myfooter .menu li a{
+	color: #8c8c8c;
+}
+
 /*箭头指示引导*/
 @-webkit-keyframes start {
 	0%,30% {opacity: 0;-webkit-transform: translate(0,10px);}
