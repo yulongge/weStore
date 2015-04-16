@@ -4,9 +4,10 @@
 	position: absolute;
 	left: 0px;
 	right: 0px;
+	bottom: 45px;
 }
 body{
-	
+	overflow: hidden;
 }
 .myheader{
 	height: 45px;
@@ -15,6 +16,8 @@ body{
 	text-align: center;
 	font-size: 3rem;
 	color: #fff;
+	position: absolute;
+	top: 0px;
 	
 }
 .mymain{
@@ -22,7 +25,7 @@ body{
 	background: #434343;
 	top: 45px;
 	bottom: 45px;
-	
+	overflow: auto;	
 }
 
 .myfooter{
@@ -94,6 +97,10 @@ body{
 	
 
 }
+
+.myfooter .menu li .active{
+	color: #ffffff;
+}
 .mymain .shark{
 	width:70%;
 	height:50px;
@@ -109,7 +116,126 @@ body{
 	color: #8c8c8c;
 	text-align: center;
 }
+.mymain .photo{
+	background-color: #fff;
+	background-position: center;
+	background-size: cover;
+	width:100%;
+	height:100%;
+	left: -100%;
+	position: absolute;
+	top:0px;
+	-webkit-animation: showPhoto 1.5s ease-in-out both;
+	-moz-animation: showPhoto 1.5s ease-in-out both;
+	animation: showPhoto 1.5s ease-in-out both;
+}
+.mymain .show{
+	-webkit-animation: showPhoto 1.5s ease-in-out both;
+	-moz-animation: showPhoto 1.5s ease-in-out both;
+	animation: showPhoto 1.5s ease-in-out both;
+}
 
+.mymain .photo .photo_inst{
+	position: absolute;
+	width:30px;
+	height: 200px;
+	top:-150px;
+	right: 20px;
+	font-size: 2rem;
+	background: #333333;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	color: #ffffff;
+	text-align: center;
+	padding-top: 15px;
+	-webkit-animation:wordsShow 1.5s ease-in-out both;
+	-moz-animation:wordsShow 1.5s ease-in-out both;
+	animation:wordsShow 1.5s ease-in-out both;
+
+}
+.mymain .photo .wordsShow{
+	-webkit-animation:wordsShow 1.5s ease-in-out both;
+	-moz-animation:wordsShow 1.5s ease-in-out both;
+	animation:wordsShow 1.5s ease-in-out both;
+}
+
+.mymain .photo .portrait{
+	width:250px;
+	height: 250px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	border:1px solid #666;
+	margin:0 auto;
+	margin-top:40%;
+
+}
+.mymain .photo .portrait img{
+	width:100%;
+	height: 100%;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	cursor: pointer;
+}
+
+.mymain .mainCon .imgbox{
+	width:100%;
+	height: 100px;
+	border:0px solid #333;
+}
+
+.mymain .mainCon .imgbox .banner1{
+	background: url(images/banner1.jpg);
+	width: 100%;
+	height: 100px;
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+.mymain .mainCon .good{
+	width:100%;
+	height: auto;
+	background: #eeeeee;
+	overflow: auto;
+}
+.mymain .mainCon .good .good_kinds{
+	width: 100%;
+	height: 100px;
+	border: 0px solid;
+	display: box;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-box;
+}
+.mymain .mainCon .good .good_kinds .kindItem{
+	height: 90px;
+	border: 0px solid #000;
+	position: relative;
+	box-flex:1;
+	-webkit-box-flex:1;
+	-moz-box-flex:1;
+	-ms-box-flex:1;
+	margin:5px;
+	background: #fff;
+	
+
+}
+
+.mymain .mainCon .good .good_list{
+	width: 100%;
+}
+.mymain .mainCon .good .good_list .listItem{
+	width: 100%;
+	height: 80px;
+	border: 0px solid;
+	margin-top: 5px;
+	background: #fff;
+}
 /*箭头指示引导*/
 @-webkit-keyframes start {
 	0%,30% {opacity: 0;-webkit-transform: translate(0,10px);}
@@ -127,9 +253,25 @@ body{
 	100% {opacity: 0;transform: translate(0,-8px);}
 }
 
+@-webkit-keyframes showPhoto{
+	to{left:0px;}
+}
+@-moz-keyframes showPhoto{
+	to{left:0px;}
+}
+@keyframes showPhoto{
+	to{left:0px;}
+}
 
-
-
+@-webkit-keyframes wordsShow{
+	to{top:10px;}
+}
+@-moz-keyframes wordsShow{
+	to{top:10px;}
+}
+@keyframes wordsShow{
+	to{top:10px;}
+}
 
 
 

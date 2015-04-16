@@ -19,11 +19,20 @@ weStore.sharkEvent=function(){
 weStore.init();
 
 $(function(){
-	$(".myfooter .menu li a").tap(function(){
+	/*$(".myfooter .menu li a").tap(function(){
 		weStore.loadPage($(".mymain"),$(this).attr("value"));
 	});
 
-	weStore.loadPage($(".mymain"),$(".myfooter .menu li a").eq(0).attr("value"));
+	weStore.loadPage($(".mymain"),$(".myfooter .menu li a").eq(0).attr("value"));*/
+	$(".mymain .shark").tap(function(){
+		$(this).hide();
+		$(".mymain .photo").addClass('show');
+		$(".mymain .photo .photo_inst").addClass('wordsShow')
+	});
+
+	$(".mymain .photo .portrait img").tap(function(){
+		$(".mymain .photo").hide();	
+	});
 });
 
 //摇一摇
